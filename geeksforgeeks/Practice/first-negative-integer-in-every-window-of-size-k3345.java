@@ -3,11 +3,11 @@
 // Language: unknown
 // Verdict: Accepted
 // URL: https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1
-// Solved on: 2026-08-22T18:06:15.893Z
+// Solved on: 2026-08-22T18:18:00.366Z
 
 class Solution {
     static List<Integer> firstNegInt(int arr[], int k) {
-        Deque<Integer> q = new ArrayDeque<>();
+       Queue<Integer> q = new LinkedList<>();
         int n = arr.length;
         ArrayList<Integer> a = new ArrayList<>();
         for(int i =0;i<k;i++){
