@@ -4,40 +4,48 @@
 // Language: java
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/min-stack/
-// Solved on: 2026-08-22T16:40:18.680Z
-
-import java.util.*;
+// Solved on: 2026-08-22T16:51:44.659Z
 
 class MinStack {
-
     Stack<Integer> st = new Stack<>();
-    Stack<Integer> minSt = new Stack<>();
+    Stack<Integer> minst = new Stack<>();
 
     public MinStack() {
         
     }
-
-    public void push(int x) {
-        st.push(x);
-
-        if (minSt.isEmpty() || x <= minSt.peek()) {
-            minSt.push(x);
+    
+    public void push(int value) {
+        st.push(value);
+        if(minst.isEmpty() || value<=minst.peek()){
+            minst.push(value);
         }
+        
     }
-
+    
     public void pop() {
         int val = st.pop();
-
-        if (val == minSt.peek()) {
-            minSt.pop();
-        }
+        if(val<=minst.peek())
+        minst.pop();
     }
-
+    
     public int top() {
-        return st.peek();
+        if(st.isEmpty()) return -1;
+        int val =st.peek();
+        return val;
+        
     }
-
+    
     public int getMin() {
-        return minSt.peek();
+       
+         return minst.peek();
     }
 }
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.push(value);
+ * obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.getMin();
+ */
