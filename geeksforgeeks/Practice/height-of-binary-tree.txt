@@ -1,0 +1,30 @@
+// Problem: Height of Binary Tree
+// Platform: geeksforgeeks
+// Language: unknown
+// Verdict: Accepted
+// URL: https://www.geeksforgeeks.org/problems/height-of-binary-tree/1
+// Solved on: 2026-08-26T02:02:24.838Z
+
+/* Structure of Binary Tree Node
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int val) {
+        data = val;
+        left = right = null;
+    }
+}*/
+
+class Solution {
+    public int height(Node root) {
+        if(root==null){
+            return -1;
+        }
+            int left = height(root.left);
+            int right = height(root.right);
+            int ans  = Math.max(left,right)+1;
+            
+        return ans;
+    }
+}
