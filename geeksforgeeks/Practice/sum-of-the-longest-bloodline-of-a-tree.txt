@@ -1,0 +1,43 @@
+// Problem: SImple and eassy solution in java
+// Platform: geeksforgeeks
+// Language: unknown
+// Verdict: Accepted
+// URL: https://www.geeksforgeeks.org/problems/sum-of-the-longest-bloodline-of-a-tree/1
+// Solved on: 2026-08-27T11:15:58.773Z
+
+/*
+class Node {
+    int data;
+    Node left, right;
+
+    public Node(int data){
+        this.data = data;
+    }
+} */
+class Solution {
+      
+       int maxSum = Integer.MIN_VALUE;;
+       int maxLen = 0;
+    void  solve(Node root, int len, int sum){
+        if(root==null){
+            if(len>maxLen){
+                 maxLen = len;
+                 maxSum = sum;
+            }
+            if(len==maxLen){
+            maxSum  = Math.max(sum,maxSum);
+                
+            }
+            return;
+        }
+        sum = sum+root.data;
+        solve(root.left,len+1,sum);
+        solve(root.right,len+1,sum);
+     
+    }
+    public int sumOfLongRootToLeafPath(Node root) {
+       solve(root,0,0);
+       return maxSum;
+        
+    }
+}
