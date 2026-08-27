@@ -4,7 +4,7 @@
 // Language: java
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
-// Solved on: 2026-08-27T11:43:49.331Z
+// Solved on: 2026-08-27T12:29:13.823Z
 
 /**
  * Definition for a binary tree node.
