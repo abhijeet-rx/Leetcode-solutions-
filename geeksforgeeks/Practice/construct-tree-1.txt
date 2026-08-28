@@ -3,7 +3,7 @@
 // Language: unknown
 // Verdict: Accepted
 // URL: https://www.geeksforgeeks.org/problems/construct-tree-1/1
-// Solved on: 2026-08-28T07:00:03.614Z
+// Solved on: 2026-08-28T11:33:59.223Z
 
 /* Structure of a Tree Node
 class Node {
