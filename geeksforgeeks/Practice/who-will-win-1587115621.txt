@@ -1,0 +1,28 @@
+// Problem: Binary Search
+// Platform: geeksforgeeks
+// Language: unknown
+// Verdict: Accepted
+// URL: https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1
+// Solved on: 2026-08-28T12:01:46.260Z
+
+class Solution {
+    public boolean binarySearch(int[] arr, int k) {
+        int start = 0;
+        int end = arr.length-1;
+        int mid = start+(end-start)/2;
+        while(start<=end){
+            if(arr[mid]>k){
+                end = mid-1;
+            }
+            if(arr[mid]<k){
+                start = mid+1;
+            }
+            if(arr[mid]==k){
+                return true;
+            }
+            mid = start+(end-start)/2;
+        }
+            return false;
+        
+    }
+}
