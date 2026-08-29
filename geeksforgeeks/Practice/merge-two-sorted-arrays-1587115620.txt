@@ -1,0 +1,41 @@
+// Problem: Well i dont recomend this yet....
+// Platform: geeksforgeeks
+// Language: unknown
+// Verdict: Accepted
+// URL: https://www.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1
+// Solved on: 2026-08-29T18:19:10.620Z
+
+class Solution {
+    public void mergeArrays(int a[], int b[]) {
+        int n = a.length;
+        int m = b.length;
+        int z = n+m;
+        int  i =0;
+        int j = 0;
+        int k =0;
+        int[] ans = new int[z];
+        while(i<n && j<m){
+            if(a[i]<b[j]){
+                ans[k++] = a[i++];
+        }
+        else{
+            ans[k++] = b[j++];
+        }
+        
+        
+    }
+    while(i<n){
+        ans[k++] = a[i++];
+    }
+    while(j<m){
+        ans[k++] = b[j++];
+    }
+    for(int x=0;x<n;x++){
+        a[x] = ans[x];
+    }
+    for(int x=0;x<m;x++){
+        b[x] = ans[n+x];
+    }
+    
+}
+}
