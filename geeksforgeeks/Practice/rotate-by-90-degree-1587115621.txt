@@ -1,0 +1,31 @@
+// Problem: Rotate by 90 degree
+// Platform: geeksforgeeks
+// Language: unknown
+// Verdict: Accepted
+// URL: https://www.geeksforgeeks.org/problems/rotate-by-90-degree-1587115621/1
+// Solved on: 2026-08-30T05:27:20.205Z
+
+class Solution {
+    public void rotateMatrix(int[][] mat) {
+        int n = mat.length;
+        for(int i = 0;i<n;i++){
+            for(int j =i+1;j<n;j++){
+                int temp  = mat[i][j];
+                mat[i][j] = mat[j][i];
+                mat[j][i] = temp;
+            }
+        }
+        for(int i=0;i<n;i++){
+            int start = 0;
+        int  end = n-1;
+        while(start<end){
+            int temp  = mat[start][i];
+            mat[start][i] = mat[end][i];
+            mat[end][i] = temp;
+            start++;
+            end--;
+        }
+        }
+        
+    }
+}
