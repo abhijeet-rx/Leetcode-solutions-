@@ -1,0 +1,42 @@
+// Problem: Most optimal approach :-                                                                                                                        class Solution {public:    Node* solve(int pre[],int size,int &i,int a,int b){        if(i >= size){            return NULL;        }        if(!(pre[i] > a && pre[i] < b)){            return NULL;        }        Node* newNode = (Node*)malloc( sizeof( Node ) );        newNode->data = pre[i++];        if(newNode->data > a && newNode->data < b){            newNode->left = solve(pre,size,i,a,newNode->data);            newNode->right = solve(pre,size,i,newNode->data,b);            return newNode;        }    }    Node* Bst(int pre[], int size) {        int i = 0;        return solve(pre,size,i,INT_MIN,INT_MAX);    }};
+// Platform: geeksforgeeks
+// Language: unknown
+// Verdict: Accepted
+// URL: https://www.geeksforgeeks.org/problems/preorder-to-postorder4423/1
+// Solved on: 2026-09-01T09:41:56.520Z
+
+/*
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int val) {
+        data = val;
+        left = right = null;
+    }
+}
+*/
+
+class Solution {
+    Node insert(int value ,Node root){
+        if(root==null){
+            return new Node(value);
+        }
+        if(value>root.data){
+            root.right = insert(value,root.right);
+        }
+        else{
+            root.left = insert(value, root.left);
+        }
+        return root;
+    }
+    public Node preToBST(int pre[]) {
+        Node root = null;
+        for(int val:pre){
+            root = insert(val , root);
+        }
+        return root;
+        
+        
+    }
+}
