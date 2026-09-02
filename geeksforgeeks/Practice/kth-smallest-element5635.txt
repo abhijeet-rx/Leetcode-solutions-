@@ -1,0 +1,15 @@
+// Problem: Kth Smallest
+// Platform: geeksforgeeks
+// Language: unknown
+// Verdict: Accepted
+// URL: https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1
+// Solved on: 2026-09-02T04:38:41.440Z
+
+class Solution {
+    public int kthSmallest(int[] arr, int k) {
+        // Code here
+        Arrays.sort(arr);
+        return arr[k-1];
+        
+    }
+}
