@@ -3,13 +3,23 @@
 // Language: unknown
 // Verdict: Accepted
 // URL: https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1
-// Solved on: 2026-09-02T04:38:41.440Z
+// Solved on: 2026-09-02T05:07:52.244Z
 
 class Solution {
     public int kthSmallest(int[] arr, int k) {
         // Code here
-        Arrays.sort(arr);
-        return arr[k-1];
-        
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        int n = arr.length;
+        for(int i = 0;i<k;i++){
+            pq.add(arr[i]);
+        }
+        for(int i=k;i<n;i++){
+            if(arr[i]<pq.peek()){
+                pq.poll();
+                pq.add(arr[i]);
+            }
+        }
+        int ans  = pq.poll();
+        return ans;
     }
 }
