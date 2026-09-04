@@ -4,7 +4,7 @@
 // Language: java
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/binary-tree-maximum-path-sum/
-// Solved on: 2026-09-04T11:12:07.617Z
+// Solved on: 2026-09-04T11:26:45.700Z
 
 /**
  * Definition for a binary tree node.
@@ -22,16 +22,23 @@
  * }
  */
 class Solution {
-     int maxpathsum =Integer.MIN_VALUE;   
+    int maxsum = Integer.MIN_VALUE;
+    int path(TreeNode root){
+        if(root==null){
+            return 0;
+        }
+        int left = Math.max(0,path(root.left));
+        int right = Math.max(0,path(root.right));
+        int sum = left+ right+root.val;
+        maxsum = Math.max(sum,maxsum);
+        return root.val+Math.max(left,right);
+
+
+        
+    }
     public int maxPathSum(TreeNode root) {
          path(root);
-        return maxpathsum;
-        }
-        int path(TreeNode root){
-            if(root == null) return 0;
-            int left = Math.max(path(root.left),0);
-            int right = Math.max(path(root.right),0);
-            int sum = left + root.val + right;
-            maxpathsum = Math.max(maxpathsum,sum);
-            return root.val + Math.max(left,right);}
+        return maxsum;
+        
+    }
 }
