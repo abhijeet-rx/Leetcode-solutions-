@@ -4,7 +4,7 @@
 // Language: java
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/course-schedule/
-// Solved on: 2026-09-05T13:58:22.399Z
+// Solved on: 2026-09-05T16:51:37.960Z
 
 import java.util.*;
 
