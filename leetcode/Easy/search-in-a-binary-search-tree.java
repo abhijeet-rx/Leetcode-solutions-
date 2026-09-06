@@ -4,7 +4,7 @@
 // Language: java
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/search-in-a-binary-search-tree/
-// Solved on: 2026-08-28T17:16:51.028Z
+// Solved on: 2026-09-06T14:30:45.664Z
 
 /**
  * Definition for a binary tree node.
