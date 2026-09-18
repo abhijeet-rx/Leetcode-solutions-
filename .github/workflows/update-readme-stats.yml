@@ -40,7 +40,17 @@ jobs:
               "<!-- COMBINED_TOTAL -->": str($combined),
           }
           for marker, value in replacements.items():
-              s = s.replace(marker, value)
+              import re
+          patterns = {
+              "LC_EASY": r"<!-- LC_EASY -->.*?<!-- /LC_EASY -->",
+              "LC_MEDIUM": r"<!-- LC_MEDIUM -->.*?<!-- /LC_MEDIUM -->",
+              "LC_HARD": r"<!-- LC_HARD -->.*?<!-- /LC_HARD -->",
+              "LC_TOTAL": r"<!-- LC_TOTAL -->.*?<!-- /LC_TOTAL -->",
+              "GFG_TOTAL": r"<!-- GFG_TOTAL -->.*?<!-- /GFG_TOTAL -->",
+              "COMBINED_TOTAL": r"<!-- COMBINED_TOTAL -->.*?<!-- /COMBINED_TOTAL -->",
+          }
+          for key, pattern in patterns.items():
+              s = re.sub(pattern, f"<!-- {key} -->{replacements[f'<!-- {key} -->']}<!-- /{key} -->", s)
           p.write_text(s)
           PY
 
