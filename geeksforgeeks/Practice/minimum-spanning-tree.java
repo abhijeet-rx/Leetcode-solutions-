@@ -3,7 +3,7 @@
 // Language: unknown
 // Verdict: Accepted
 // URL: https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1
-// Solved on: 2026-09-16T18:47:23.549Z
+// Solved on: 2026-09-18T06:53:25.557Z
 
 class pair{
     int node;
