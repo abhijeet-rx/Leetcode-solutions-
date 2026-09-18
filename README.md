@@ -27,7 +27,7 @@
 | 🟢 GeeksForGeeks | — | — | — | `XX` |
 | **Combined** | | | | **`XX+`** |
 
-> 🔥 **<!-- COMBINED_TOTAL --> solutions** and counting — consistency is the strategy.
+> 🔥 **106 solutions** and counting — consistency is the strategy.
 
 </div>
 
