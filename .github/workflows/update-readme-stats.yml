@@ -29,28 +29,37 @@ jobs:
 
           python3 - <<PY
           from pathlib import Path
+          import re
+
           p = Path("README.md")
           s = p.read_text()
-          replacements = {
-              "<!-- LC_EASY -->": str($easy),
-              "<!-- LC_MEDIUM -->": str($medium),
-              "<!-- LC_HARD -->": str($hard),
-              "<!-- LC_TOTAL -->": str($leetcode),
-              "<!-- GFG_TOTAL -->": str($gfg),
-              "<!-- COMBINED_TOTAL -->": str($combined),
-          }
-          for marker, value in replacements.items():
-              import re
-          patterns = {
-              "LC_EASY": r"<!-- LC_EASY -->.*?<!-- /LC_EASY -->",
-              "LC_MEDIUM": r"<!-- LC_MEDIUM -->.*?<!-- /LC_MEDIUM -->",
-              "LC_HARD": r"<!-- LC_HARD -->.*?<!-- /LC_HARD -->",
-              "LC_TOTAL": r"<!-- LC_TOTAL -->.*?<!-- /LC_TOTAL -->",
-              "GFG_TOTAL": r"<!-- GFG_TOTAL -->.*?<!-- /GFG_TOTAL -->",
-              "COMBINED_TOTAL": r"<!-- COMBINED_TOTAL -->.*?<!-- /COMBINED_TOTAL -->",
-          }
-          for key, pattern in patterns.items():
-              s = re.sub(pattern, f"<!-- {key} -->{replacements[f'<!-- {key} -->']}<!-- /{key} -->", s)
+
+          s = re.sub(
+              r"\| 🟡 LeetCode \|.*?\|.*?\|.*?\|.*?\|",
+              f"| 🟡 LeetCode | **{easy}** | **{medium}** | **{hard}** | **{leetcode}** |",
+              s,
+              count=1,
+          )
+          s = re.sub(
+              r"\| 🟢 GeeksForGeeks \|.*?\|",
+              f"| 🟢 GeeksForGeeks | — | — | — | **{gfg}** |",
+              s,
+              count=1,
+          )
+          s = re.sub(
+              r"\| \*\*Combined\*\* \|.*?\| \*\*\d+\*\* \|",
+              f"| **Combined** | | | | | **{combined}** |",
+              s,
+              count=1,
+          )
+
+          s = re.sub(
+              r"🔥 \*\*\d+ solutions\*\* and counting",
+              f"🔥 **{combined} solutions** and counting",
+              s,
+              count=1,
+          )
+
           p.write_text(s)
           PY
 
