@@ -7,7 +7,7 @@
 ### `abhijeet-rx` | VIT-AP University | CSE '27
 
 [![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/YOUR_USERNAME)
-[![GFG](https://img.shields.io/badge/GeeksForGeeks-Profile-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://auth.geeksforgeeks.org/user/YOUR_USERNAME)
+[![GFG](https://img.shields.io/badge/GeeksForGeeks-Profile-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/YOUR_USERNAME/)
 [![GitHub](https://img.shields.io/badge/GitHub-abhijeet--rx-181717?style=for-the-badge&logo=github)](https://github.com/abhijeet-rx)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/abhijeet-singh-3b6a39279)
 
@@ -17,6 +17,8 @@
 
 ## 📊 Progress Tracker
 
+> Counts are calculated from the solution files in this repository and updated automatically by GitHub Actions.
+
 <div align="center">
 
 | Platform | Easy | Medium | Hard | Total |
@@ -25,7 +27,7 @@
 | 🟢 GeeksForGeeks | — | — | — | `XX` |
 | **Combined** | | | | **`XX+`** |
 
-> 🔥 **123 commits** and counting — consistency is the strategy.
+> 🔥 **<!-- COMBINED_TOTAL --> solutions** and counting — consistency is the strategy.
 
 </div>
 
@@ -73,13 +75,13 @@ Leetcode-solutions-/
 
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhijeet-rx&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhijeet-rx&layout=compact&langs_count=6&theme=tokyonight&hide_border=true"/>
+<!-- Top Languages omitted because this card reflects the whole GitHub account, not this DSA repository. -->
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=abhijeet-rx&theme=tokyonight&hide_border=true" />
+<img src="https://streak-stats.demolab.com/?user=abhijeet-rx&theme=tokyonight&hide_border=true" />
 
 </div>
 
@@ -128,8 +130,8 @@ This keeps the history clean, searchable, and consistent.
 | 📧 Email | abhijeetrajput216@gmail.com |
 | 💼 LinkedIn | [abhijeet-singh-3b6a39279](https://linkedin.com/in/abhijeet-singh-3b6a39279) |
 | 🐙 GitHub | [abhijeet-rx](https://github.com/abhijeet-rx) |
-| 🟡 LeetCode | [Your Profile](https://leetcode.com/YOUR_USERNAME) |
-| 🟢 GFG | [Your Profile](https://auth.geeksforgeeks.org/user/YOUR_USERNAME) |
+| 🟡 LeetCode | [LeetCode Profile](https://leetcode.com/YOUR_USERNAME) |
+| 🟢 GFG | [GFG Profile](https://www.geeksforgeeks.org/user/YOUR_USERNAME/) |
 
 </div>
 
