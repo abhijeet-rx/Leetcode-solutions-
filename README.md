@@ -23,8 +23,8 @@
 
 | Platform | Easy | Medium | Hard | Total |
 |----------|------|--------|------|-------|
-| 🟡 LeetCode | `<!-- LC_EASY -->15<!-- /LC_EASY -->` | `<!-- LC_MEDIUM -->27<!-- /LC_MEDIUM -->` | `<!-- LC_HARD -->3<!-- /LC_HARD -->` | `<!-- LC_TOTAL -->45<!-- /LC_TOTAL -->` |
-| 🟢 GeeksForGeeks | — | — | — | `<!-- GFG_TOTAL -->61<!-- /GFG_TOTAL -->` |
+| 🟡 LeetCode | **15** | **27** | **3** | **45** |
+| 🟢 GeeksForGeeks | — | — | — | **61** |
 | **Combined** | | | | **`XX+`** |
 
 > 🔥 **106 solutions** and counting — consistency is the strategy.
