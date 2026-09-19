@@ -60,35 +60,7 @@
 
 ---
 
-## 📊 GitHub Stats
 
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhijeet-rx&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub stats for abhijeet-rx"/>
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhijeet-rx&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages for abhijeet-rx"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com/?user=abhijeet-rx&theme=tokyonight&hide_border=true" alt="GitHub contribution streak for abhijeet-rx" />
-
-</div>
-
----
-
-## ⚡ Languages Used
-
-<div align="center">
-
-![Java](https://img.shields.io/badge/Java-Primary-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-Secondary-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-Occasional-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-
-</div>
-
----
 
 ## 🎯 Current Focus
 
