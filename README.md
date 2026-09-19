@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=DSA%20Solutions&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=LeetCode%20%7C%20GeeksForGeeks%20%7C%20Abhijeet%20Singh&descAlignY=53&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=DSA%20Solutions&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35" width="100%"/>
 
 # 🧠 Data Structures & Algorithms
 
 ### `abhijeet-rx` | VIT-AP University | CSE '27
 
-[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/YOUR_USERNAME)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/abhijeet-rx)
 [![GFG](https://img.shields.io/badge/GeeksForGeeks-Profile-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/YOUR_USERNAME/)
 [![GitHub](https://img.shields.io/badge/GitHub-abhijeet--rx-181717?style=for-the-badge&logo=github)](https://github.com/abhijeet-rx)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/abhijeet-singh-3b6a39279)
@@ -25,30 +25,11 @@
 |----------|------|--------|------|-------|
 | 🟡 LeetCode | **15** | **27** | **3** | **45** |
 | 🟢 GeeksForGeeks | — | — | — | **61** |
-| **Combined** | | | | **`XX+`** |
+| **Combined** | | | | **106** |
 
 > 🔥 **106 solutions** and counting — consistency is the strategy.
 
 </div>
-
----
-
-## 🗂️ Repository Structure
-
-```
-Leetcode-solutions-/
-├── 📁 leetcode/
-│   ├── 📁 Easy/          # Foundation problems
-│   ├── 📁 Medium/        # Core interview problems  
-│   └── 📁 Hard/          # Advanced challenges
-│
-└── 📁 geeksforgeeks/
-    └── 📁 Practice/      # Topic-wise GFG problems
-        ├── Trees & Binary Trees
-        ├── Graphs (BFS, DFS, Cycle Detection)
-        ├── Sorting Algorithms
-        └── Dynamic Programming
-```
 
 ---
 
@@ -69,19 +50,29 @@ Leetcode-solutions-/
 
 ---
 
-## 📈 GitHub Stats
+## 📈 LeetCode Stats
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhijeet-rx&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
+<img src="https://leetcard.jacoblin.cool/abhijeet-rx?theme=dark&font=Karma&ext=heatmap" alt="LeetCode stats for abhijeet-rx" width="720" />
 
-<!-- Top Languages omitted because this card reflects the whole GitHub account, not this DSA repository. -->
+</div>
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhijeet-rx&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub stats for abhijeet-rx"/>
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhijeet-rx&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages for abhijeet-rx"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=abhijeet-rx&theme=tokyonight&hide_border=true" />
+<img src="https://streak-stats.demolab.com/?user=abhijeet-rx&theme=tokyonight&hide_border=true" alt="GitHub contribution streak for abhijeet-rx" />
 
 </div>
 
@@ -130,7 +121,7 @@ This keeps the history clean, searchable, and consistent.
 | 📧 Email | abhijeetrajput216@gmail.com |
 | 💼 LinkedIn | [abhijeet-singh-3b6a39279](https://linkedin.com/in/abhijeet-singh-3b6a39279) |
 | 🐙 GitHub | [abhijeet-rx](https://github.com/abhijeet-rx) |
-| 🟡 LeetCode | [LeetCode Profile](https://leetcode.com/YOUR_USERNAME) |
+| 🟡 LeetCode | [LeetCode Profile](https://leetcode.com/abhijeet-rx) |
 | 🟢 GFG | [GFG Profile](https://www.geeksforgeeks.org/user/YOUR_USERNAME/) |
 
 </div>
