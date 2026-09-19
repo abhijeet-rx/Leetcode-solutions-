@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=DSA%20Solutions&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=DSA%20Solutions&fontSize=42&fontColor=fff&animation=twinkling&fontAlign=50" width="100%"/>
 
 # 🧠 Data Structures & Algorithms
 
 ### `abhijeet-rx` | VIT-AP University | CSE '27
 
-[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/abhijeet-rx)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/spidey2292)
 [![GFG](https://img.shields.io/badge/GeeksForGeeks-Profile-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/user/YOUR_USERNAME/)
 [![GitHub](https://img.shields.io/badge/GitHub-abhijeet--rx-181717?style=for-the-badge&logo=github)](https://github.com/abhijeet-rx)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/abhijeet-singh-3b6a39279)
@@ -54,7 +54,7 @@
 
 <div align="center">
 
-<img src="https://leetcard.jacoblin.cool/abhijeet-rx?theme=dark&font=Karma&ext=heatmap" alt="LeetCode stats for abhijeet-rx" width="720" />
+<img src="https://leetcard.jacoblin.cool/spidey2292?theme=dark&font=Karma&ext=heatmap" alt="LeetCode stats for spidey2292" width="720" />
 
 </div>
 
@@ -121,7 +121,7 @@ This keeps the history clean, searchable, and consistent.
 | 📧 Email | abhijeetrajput216@gmail.com |
 | 💼 LinkedIn | [abhijeet-singh-3b6a39279](https://linkedin.com/in/abhijeet-singh-3b6a39279) |
 | 🐙 GitHub | [abhijeet-rx](https://github.com/abhijeet-rx) |
-| 🟡 LeetCode | [LeetCode Profile](https://leetcode.com/abhijeet-rx) |
+| 🟡 LeetCode | [LeetCode Profile](https://leetcode.com/spidey2292) |
 | 🟢 GFG | [GFG Profile](https://www.geeksforgeeks.org/user/YOUR_USERNAME/) |
 
 </div>
