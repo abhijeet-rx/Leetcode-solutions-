@@ -17,50 +17,50 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Update solution counts
+      - name: Count total solved questions
         shell: bash
         run: |
-          easy=$(find leetcode/Easy -type f | wc -l)
-          medium=$(find leetcode/Medium -type f | wc -l)
-          hard=$(find leetcode/Hard -type f | wc -l)
-          leetcode=$((easy + medium + hard))
-          gfg=$(find geeksforgeeks/Practice -type f | wc -l)
-          combined=$((leetcode + gfg))
+          leetcode_total=0
+          if [ -d "leetcode" ]; then
+            leetcode_total=$(find leetcode -type f \( -iname "*.java" -o -iname "*.cpp" -o -iname "*.py" -o -iname "*.js" \) | wc -l)
+          fi
 
-          python3 - <<PY
+          gfg_total=0
+          if [ -d "geeksforgeeks" ]; then
+            gfg_total=$(find geeksforgeeks -type f \( -iname "*.java" -o -iname "*.cpp" -o -iname "*.py" -o -iname "*.js" \) | wc -l)
+          fi
+
+          combined=$((leetcode_total + gfg_total))
+
+          python3 - <<'PY'
           from pathlib import Path
           import re
 
           p = Path("README.md")
-          s = p.read_text()
+          text = p.read_text()
 
-          s = re.sub(
-              r"\| 🟡 LeetCode \|.*?\|.*?\|.*?\|.*?\|",
-              f"| 🟡 LeetCode | **{easy}** | **{medium}** | **{hard}** | **{leetcode}** |",
-              s,
-              count=1,
-          )
-          s = re.sub(
-              r"\| 🟢 GeeksForGeeks \|.*?\|",
-              f"| 🟢 GeeksForGeeks | — | — | — | **{gfg}** |",
-              s,
-              count=1,
-          )
-          s = re.sub(
-              r"\| \*\*Combined\*\* \|.*?\| \*\*\d+\*\* \|",
-              f"| **Combined** | | | | | **{combined}** |",
-              s,
-              count=1,
-          )
+          start = "<!--START_TOTALS-->"
+          end = "<!--END_TOTALS-->"
 
-          s = re.sub(
+          pattern = rf"{re.escape(start)}.*?{re.escape(end)}"
+          replacement = f"""{start}
+| Platform | Total Solutions |
+|----------|-----------------|
+| 🟡 LeetCode | **{leetcode_total}** |
+| 🟢 GeeksForGeeks | **{gfg_total}** |
+| **Combined** | **{combined}** |
+{end}"""
+
+          text = re.sub(pattern, replacement, text, flags=re.S, count=1)
+
+          text = re.sub(
               r"🔥 \*\*\d+ solutions\*\* and counting",
               f"🔥 **{combined} solutions** and counting",
-              s,
+              text,
               count=1,
           )
 
-          p.write_text(s)
+          p.write_text(text)
           PY
 
       - name: Commit updated README
@@ -68,5 +68,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff --cached --quiet || git commit -m "docs: update DSA solution stats"
+          git diff --cached --quiet || git commit -m "docs: update total solution count"
           git push
