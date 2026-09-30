@@ -17,20 +17,15 @@
 
 ## 📊 Progress Tracker
 
-> Counts are calculated from the solution files in this repository and updated automatically by GitHub Actions.
+<!--START_TOTALS-->
+| Platform | Total Solutions |
+|----------|-----------------|
+| 🟡 LeetCode | **0** |
+| 🟢 GeeksForGeeks | **0** |
+| **Combined** | **0** |
+<!--END_TOTALS-->
 
-<div align="center">
-
-| Platform | Easy | Medium | Hard | Total |
-|----------|------|--------|------|-------|
-| 🟡 LeetCode | **15** | **27** | **3** | **45** |
-| 🟢 GeeksForGeeks | — | — | — | **61** |
-| **Combined** | | | | **106** |
-
-> 🔥 **106 solutions** and counting — consistency is the strategy.
-
-</div>
-
+> 🔥 **0 solutions** and counting — consistency is the strategy.
 ---
 
 ## 🧩 Topics Covered
